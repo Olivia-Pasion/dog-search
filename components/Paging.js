@@ -13,7 +13,7 @@ export default function createPaging(root, { handlePaging }) {
     next.addEventListener('click', () => {
         // *** call handlePaging with the page change and page size
         handlePaging(+1, selectSize.value);
-        ;
+    
     });
 
     selectSize.addEventListener('change', () => {

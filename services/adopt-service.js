@@ -11,7 +11,7 @@ export async function getDogs(breed, age, { start, end }) {
         );
 
     // *** add breed and age filters if they exist
-    console.log(typeof breed);
+
     if (breed) {
         query = query.ilike('breed', `%${breed}%`);
     }
